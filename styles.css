@@ -1,21 +1,67 @@
 body
 {
-	font-family: Verdana, Arial;
-	padding: 2em;
+	font-family: Arial;
+	background: radial-gradient(#b1e1fa, #1fa5ea) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 h1
 {
-	font-size: 3em;
+	margin-top: 1em;
+	font-size: 1.4em;
+	color: #fff;
+	text-align: center;
 }
 
 h2
 {
-	font-size: 1.6em;
+	font-size: 0.9em;
 	margin: 0.8em 0;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+}
+
+.smaller
+{
+	font-size: 80%;
+}
+
+div.titleimage
+{
+	text-align: center;
+	margin-top: 2em;
+	width: 100%;
+}
+
+.onsale
+{
+	background-color: #0b3a54;
+	color: #fffaa1;
+	border-bottom: solid 2px #222;
+	margin-bottom: 0.4em;
 }
 
 p
 {
-	margin: 0.8em 0;
+	padding: 0.4em;
+	font-size: 0.9em;
+}
+
+#footer {
+   height:200px;
+   width:100%;
+   background: #2392ca;
+	text-align: center;
+	color: #bed9eb;
+	margin-top: 2em;
+}
+
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
